@@ -13,6 +13,6 @@ type MainController struct {
 func (c *MainController) Get() {
 	
 	timeString := time.Now().Format("2006-01-02 15:04:05")
-	c.Ctx.WriteString("hello world "+timeString)
+	c.Ctx.WriteString("1hello world "+timeString)
 	fmt.Println("hello "+timeString)
 }
